@@ -1,0 +1,335 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main{
+  float: left;
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3-media0.fl.yelpcdn.com/bphoto/gHNcNahbSwCaGQGT3QYdPQ/o.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav{
+  float: left;
+  width: 100%;
+  height: auto;
+}
+nav ul{
+  float: left;
+  width: 100%;
+  height: auto;
+  list-style: none;
+  margin: 2% 0 0 8%;
+}
+nav li{
+  display: inline;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: 3%;
+}
+.space{
+  margin-right: 40%;
+}
+.borderBox{
+  border: 1.5px solid white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+h1{
+  float: left;
+  height: 110px;
+  width: 100%;
+  margin: 6rem 0 70px 43%;
+}
+h1 img{
+  float: left;
+  height:100%;
+  width:15%;
+  background: none;
+}
+.search{
+  float: left;
+  clear: left;
+  width: 100%;
+  height:3.3rem;
+  margin-bottom: 2%;
+}
+.search form{
+  width: 80%;
+  height: 100%;
+  margin: 0 0 3% 10%;
+  border: 1px solid gray;
+}
+.search label{
+  float: left;
+  background-color: white;
+  width: 5%;
+  height: 100%;
+  font-size: 1.2rem;
+  padding: 0.9rem 0.5rem 0 0.5rem;
+  color: rgb(100, 99, 97);
+  font-weight: bold;
+}
+.search input{
+  float: left;
+  font-size: 1.2rem;
+  height: 100%;
+  width: 42%;
+  border: none;
+}
+.search form > label + input + label{
+  border-left: 1px solid gray;
+}
+.search i{
+  float: left;
+  font-size: 1.6rem;
+  background-color: rgb(211, 35, 35);
+  color: white;
+  height:100%;
+  width: 6%;
+  padding: 0.5rem 1.1rem 0 1.1rem
+}
+.services{
+  width: 100%;
+}
+.services ul{
+  float: left;
+  width: 100%;
+  margin-bottom: 9%;
+  list-style: none;
+  text-align: center;
+}
+.services li{
+  display: inline;
+  color: white;
+  margin-right: 2%;
+}
+.main span{
+  float: left;
+  clear: both;
+  color: white;
+  font-weight: bold;
+  margin-left: 45%;
+}
+.examples{
+  float: left;
+  height: 500px;
+  width: 100%;
+}
+h2, .category h3{
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  color:rgb(211, 35, 35);
+  font-size: 1.6rem;
+}
+.cities{
+  float: left;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 3.5%;
+  color: gray;
+}
+.cities li{
+  display: inline;
+  margin-right: 2%;
+}
+.examples h3{
+  float: left;
+  clear: both;
+  width: 100%;
+  color:rgb(211, 35, 35);
+  text-align: center;
+  margin-bottom: 2%;
+}
+.businesses{
+  float: left;
+  width: 100%;
+  margin-left: 21%;
+  list-style: none;
+}
+.businesses img{
+  float: left;
+  margin: 0 0 1% 3%;
+}
+.examples h4{
+  float: left;
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+.examples a{
+  text-decoration: none;
+  color: rgb(43, 114, 182);
+  font-weight: lighter;
+}
+.category {
+  float: left;
+  height: 350px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: rgb(245, 245, 245);
+}
+.category ul{
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin-top: 3%;
+}
+.category li{
+  float: left;
+  margin-left: 10%;
+}
+/* ----- MEDIA QUERIES ----- */
+@media only screen and (max-width: 699px){
+  .hide, .hide2{
+    display: none;
+  }
+  .main{
+    height: 525px;
+  }
+  h1 img{
+    width:30%;
+    margin-left: -2rem;
+  }
+  .search form{
+    border: none;
+  }
+  .search label{
+    width: 15%;
+  }
+  .search input{
+      width: 73%;
+  }
+  .search i{
+    clear: both;
+    width: 88%;
+    text-align: center;
+
+  }
+  .examples{
+    height: auto;
+    padding-bottom: 5%;
+  }
+  .businesses{
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+  }
+
+  .category ul{
+    margin-left: 5rem;
+  }
+  .nextLine{
+    clear: left;
+  }
+  .category{
+    height: auto;
+    padding-bottom: 3%;
+  }
+
+}
+
+
+@media (min-width: 700px) and (max-width: 899px){
+  .hide, .hide2{
+    display: none;
+  }
+  .main{
+    height: 450px;
+  }
+  h1 img{
+    width:20%;
+  }
+  .search label{
+    width: 9%;
+  }
+  .search input{
+      width: 36%;
+  }
+  .search i{
+    width: 10%;
+  }
+  .examples{
+    height: auto;
+    padding-bottom: 5%;
+  }
+  .businesses{
+    margin-left: 6%;
+  }
+  .category ul{
+    padding-left: 13%;
+  }
+  .nextLine{
+    clear: left;
+  }
+  .category{
+    height: auto;
+    padding-bottom: 3%;
+  }
+
+}
+
+@media (min-width: 900px) and (max-width: 1099px){
+  .hide, .hide2{
+    display: none;
+  }
+  .main{
+    height: 450px;
+  }
+  .search label{
+    width: 9%;
+  }
+  .search input{
+      width: 38%;
+  }
+  .examples {
+    height: 350px;
+  }
+  .businesses{
+    margin-left: 14%;
+  }
+  .category ul{
+    padding-left: 15%;
+  }
+  .nextLine{
+    clear: left;
+  }
+  .category{
+    height: auto;
+    padding-bottom: 3%;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1335px){
+  .hide{
+    display: none;
+  }
+  .main{
+    height: 500px;
+  }
+  .search label{
+    width: 7%;
+  }
+  .search input{
+      width: 40%;
+  }
+  .examples{
+    height: 400px;
+  }
+  .category ul{
+    padding-left: 20%;
+  }
+  .nextLine{
+    clear: left;
+  }
+  .category{
+    height: auto;
+  }
+}
